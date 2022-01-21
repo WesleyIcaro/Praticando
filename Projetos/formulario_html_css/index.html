@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo"><strong>Formulário para doação de sangue</strong></h1>
+        <p id="subtitulo"> Complete as suas informações:<br><br></p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email"
+            name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Selecione o seu tipo sanguíneo:</strong></label>
+            <select name="tiposanguineo" id="tiposanguineo">
+                <option selected disabled value="">Selecione</option>
+                <option value="O+">O+</option>
+                <option value="O+">O-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Quantidade de pessoas que irão doar?</strong></label>
+            <select name="senioridade" id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option value="Uma pessoa">Uma pessoa</option>
+                <option value="pleno">Grupo de pessoas</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione uma instituição para doar:</strong><br><br></label>
+                <input type="checkbox" id="instituição1" name="instituição1" value="hemoservice">
+                <label for="instituição1"> Hemoservice</label>
+                <input type="checkbox" id="instituição2" name="instituição2" value="hemominas">
+                <label for="instituição2"> Hemominas</label>
+                <input type="checkbox" id="instituição3" name="instituição3" value="hemonúcleo"><label for="instituição"> Hemonúcleo</label>
+                <input type="checkbox" id="instituição4" name="instituição4" value="vitahemoterapia"><label for="instituição4"> Vita Hemoterapia</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Requisitos básicos para doação de sangue:</strong></label>
+            <ul>
+                <li> Estar em boas condições de saúde.</li>
+                <li>Ter entre 16 e 69 anos, desde que a primeira doação tenha sido feita até 60 anos (menores de 18 anos, <a href="">clique aqui</a> para ver documentos necessários e formulário de autorização).</li>
+                <li> Pesar no mínimo 50kg.</li>
+                <li>Estar descansado (ter dormido pelo menos 6 horas nas últimas 24 horas).</li>
+                <li> Estar alimentado (evitar alimentação gordurosa nas 4 horas que antecedem a doação).</li>
+                <li>Apresentar documento original com foto recente, que permita a identificação do candidato, emitido por órgão oficial (Carteira de Identidade, Cartão de Identidade de Profissional Liberal, Carteira de Trabalho e Previdência Social).</li>
+            </ul>
+        </div>
+
+        <p>Para mais informações <a href="">clique aqui</a></p><br>
+        
+        <button class="botao" type="submit">Confirmar</button>
+        <br><br><br>
+    </form>
+    
+</body>
+</html>
